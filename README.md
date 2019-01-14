@@ -17,9 +17,9 @@ Puisque nous cherchons à **prédire** un prix, il semblerait que la **régressi
 
 Une régression linéaire doit respecter 3 hypothèses :
 
-    • **Linéarité** : Il faut que votre dataset ait une évolution linéaire
-    • **Homoscedasticité** : La variance de votre dataset ne doit pas être trop forte
-    • **Non-colinéarité** : Il faut que les variables prédictives n'aient pas de relation forte entre elles​
+    * **Linéarité** : Il faut que votre dataset ait une évolution linéaire
+    * **Homoscedasticité** : La variance de votre dataset ne doit pas être trop forte
+    * **Non-colinéarité** : Il faut que les variables prédictives n'aient pas de relation forte entre elles​
 
 Une fois qu'on pense avoir un dataset ayant ces **3 hypothèses** on peut alors faire notre régression linéaire à variables multiples.
 
@@ -142,7 +142,7 @@ Il semblerait que notre modèle fasse du plutôt bon travail hormis pour la cinq
 
 Une manière assez simple d'évaluer notre modèle serait de voir **l'écart moyen** entre nos valeurs prédites et nos valeurs réelles. De cette manière, nous aurons une vue globale de la performance de notre modèle.
 
-## Scoring Mean Square ERROR
+**Scoring Mean Square ERROR**
 
 ```
 ecart = ((y_pred_lr - y_test)**2)**(1/2)
@@ -157,8 +157,8 @@ Il est toujours possible d'améliorer un modèle.
 
 Voici quelques **idées** qui pourraient faire la différence :
 
-    • Regarder la **co-linéarité** entre les variables et retirer celles qui ont une relation trop forte
-    • Ajouter de **nouvelles variables** pour affiner le modèle
-    • Supprimer les **outlayers** qui faussent le modèle de prédiction
+    * Regarder la **co-linéarité** entre les variables et retirer celles qui ont une relation trop forte
+    * Ajouter de **nouvelles variables** pour affiner le modèle
+    * Supprimer les **outlayers** qui faussent le modèle de prédiction
 
 Ces idées seront donc à développer pour optimiser nos prédictions.
